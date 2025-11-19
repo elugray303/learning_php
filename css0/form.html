@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Khảo Sát</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Biểu mẫu khảo sát</h2>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Họ tên</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Nhập tên của bạn">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Tuổi</label>
+                <input type="number" id="age" name="age" placeholder="Nhập tuổi">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Hiện tại bạn đang là?</label>
+                <select id="role" name="role">
+                    <option value="student">Học sinh</option>
+                    <option value="college-student">Sinh viên</option>
+                    <option value="employee">Người đi làm</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Bạn có thích học lập trình không?</label>
+                <div class="option-item">
+                    <input type="radio" id="yes" name="like_programming" value="yes">
+                    <label for="yes">Có</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="no" name="like_programming" value="no">
+                    <label for="no">Không</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="normal" name="like_programming" value="normal">
+                    <label for="normal">Bình thường</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Những chủ đề bạn quan tâm? (Có thể chọn nhiều đáp án)</label>
+                <div class="option-item">
+                    <input type="checkbox" id="ai" name="topics" value="ai">
+                    <label for="ai">Trí tuệ nhân tạo</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="security" name="topics" value="security">
+                    <label for="security">Bảo mật thông tin</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="web" name="topics" value="web">
+                    <label for="web">Phát triển web</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="data" name="topics" value="data">
+                    <label for="data">Khoa học dữ liệu</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="question">Bạn có câu hỏi gì không?</label>
+                <textarea id="question" name="question" placeholder="Nhập câu hỏi của bạn"></textarea>
+            </div>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+</body>
+</html>
